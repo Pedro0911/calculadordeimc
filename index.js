@@ -34,25 +34,25 @@ btn.onclick = ()=>{
     if(imc <= 18.5){
         alerta.style.background = "#F09F40";
         Mostra_resultado.innerText = `Seu IMC está em ${imc.toFixed(2)}.\n Dessa forma você é considerado abaixo do peso`
-        imagem_exemplo.src='/imagens/magro.png'
+        imagem_exemplo.src='./imagens/magro.png'
     }
     //peso ideal
     if(imc >= 18.6 && imc <= 24.9){
         alerta.style.background = "#40F09C";    
         Mostra_resultado.innerText = `Seu IMC está em ${imc.toFixed(2)}.\n Dessa forma você está no peso ideal`
-        imagem_exemplo.src='/imagens/corpoexemplo.png'
+        imagem_exemplo.src='./imagens/corpoexemplo.png'
     }
     //sobrepeso
     if(imc >= 25 && imc <= 29.9){
         alerta.style.background = "#D2E032";
         Mostra_resultado.innerText = `Seu IMC está em ${imc.toFixed(2)}.\n Dessa forma você está com sobrepeso`
-        imagem_exemplo.src='/imagens/sobrepeso.png'
+        imagem_exemplo.src='./imagens/sobrepeso.png'
     }
     //Obesidade
     if(imc > 30){
         alerta.style.background = "#F21111";
         Mostra_resultado.innerText = `Seu IMC está em ${imc.toFixed(2)}.\n Dessa forma você está obeso`
-        imagem_exemplo.src='/imagens/acima_peso.png'
+        imagem_exemplo.src='./imagens/acima_peso.png'
     }
 }
     //Mostra_resultado.innerText = "aqui está o resltado"
@@ -64,7 +64,7 @@ function Clear_Data(){
     var alerta = document.querySelector('#bolinha_resultado_cor')
 
 
-    imagem_exemplo.src='/imagens/imagem_padrao.png'
+    imagem_exemplo.src='./imagens/imagem_padrao.png'
     Mostra_resultado.innerText = "resultado"
     alerta.style.background = "#40F09C";
 
