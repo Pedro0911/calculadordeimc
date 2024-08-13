@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>calculador de imc</title>
+</head>
+<body>
+    <header><img src="/imagens/logotype/logo.png" alt="logotipo"></header>
+
+    <main>
+        <section id="pegarDados">
+            <div>
+                <H1 class="monts">Preencha os dados <br>para calcular seu IMC</H1>
+            </div>
+
+            <form id="#meusDados">
+                <div id="altura">
+                    <label for="peso" class="monts2">Qual sua altura?:</label><br>
+                    <input type="number" class="dataColectField" id="alturaId"/>
+                </div>
+
+                <div id="peso">
+                    <label for="peso" class="monts2">Qual seu peso?:</label><br>
+                    <input type="number" class="dataColectField" id="pesoID"/>
+                </div>
+
+                <button id="calcImc"
+                 class="monts2">calcular imc</button>
+
+                <input type="reset"
+                onclick="Clear_Data()" 
+                id="ClearData" 
+                class="monts2"
+                value="Limpar"
+                >
+            </form>
+
+        </section><!--pegar dados-->
+
+        <section id="mostrarResultados">
+            <div>
+                <img src="/imagens/imagem_padrao.png" alt="corpo exemplar" id="foto_resultado">
+            </div>
+            
+            <div id="indicadorResult">
+                <div id="bolinha_resultado_cor"></div>
+                <div><p class="monts2" id="txt_resultado">Resultado</p></div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/pedro09_ok/">
+            <p class="monts2">
+                Pedro09_ok
+            </p>
+        </a>    
+    </footer>
+
+
+
+
+    <script src="/index.js"></script>
+
+</body>
+</html>

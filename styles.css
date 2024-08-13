@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#foto_resultado{
+    height: 500px;
+    width: 455px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*titulo montserrat google fonts*/
+.monts{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+
+  margin-bottom: 40px;
+} 
+
+header{
+    background-color: #40F09C;
+    width: 100%;
+
+    padding: 10px;
+    margin-bottom: 35px;
+
+    display:flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+main{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pegarDados{
+    margin-right: 95px;
+}
+
+
+.monts2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 23px;
+
+  cursor: pointer;
+}
+
+.dataColectField{
+    height: 70px;
+    width:493px;
+
+    font-size: 23px;
+
+    padding: 20px    ;
+
+    margin-top: 10px;
+
+    border:2px solid #40F09C;
+    border-radius: 10px;
+}
+
+#altura{
+    margin-bottom: 15px;
+}
+#peso{
+    margin-top: 15px;
+}
+
+#calcImc{
+    height: 58px;
+    width:310px;
+
+    margin-top: 30px;
+
+    background-color: #40F09C;
+    color: white;
+    
+    border:1px solid #093FFF; 
+    border-radius: 10px;
+}
+
+#ClearData{
+    height: 58px;
+    width:310px;
+
+    margin-top: 30px;
+
+    background-color: #D2E032;
+    color: white;
+    
+    border:1px solid #093FFF; 
+    border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+#calcImc:hover{
+    background-color: #00FF85;
+}
+
+#ClearData:hover{
+    background-color: #c6d428;
+}
+
+#mostrarResultados{
+    margin-left: 95px;
+}
+
+#indicadorResult{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+#txt_resultado{
+    margin-left: 20px;
+}
+
+#bolinha_resultado_cor{
+    background-color: #40F09C;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #40F09C;
+    border-radius: 100%;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    margin-top: 40px;
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+
+    background-color: #40F09C;
+    position: absolute;
+
+}
+
+/*a partir daqui teremos os media queries
+*/
+
+/*tablet*/
+
+@media screen and (max-width: 744px){
+
+    body{
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle  ;
+    }
+
+    #mostrarResultados{
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #bolinha_resultado_cor{
+        background-color: #40F09C;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #40F09C;
+        border-radius: 100%;
+    }
+
+    #indicadorResult{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    #foto_resultado{
+        align-items: center;
+    }
+
+    #pegarDados{
+        margin-right: 30px;
+    }
+
+    #mostrarResultados{
+        margin-left: 0px;
+    }
+
+    .monts{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 40px;
+
+        text-align: center;
+      
+        margin-bottom: 40px;
+      } 
+
+}
+
+
+
+/*tela de celular*/
+
+
+@media screen and (max-width: 375px){
+
+    body{
+        align-items: center;
+    }
+
+    header img{
+        width: 277;
+        height: 45;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle  ;
+    }
+
+    #mostrarResultados{
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #bolinha_resultado_cor{
+        background-color: #40F09C;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #40F09C;
+        border-radius: 100%;
+    }
+
+    #indicadorResult{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    #foto_resultado{
+        width: 351px;
+        height: 385px;
+
+        align-items: center;
+    }
+
+    #pegarDados{
+        margin-right: 30px;
+    }
+
+    #mostrarResultados{
+        width: 351;
+        height: 383;
+        margin-left: 0px;
+    }
+
+    .monts{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 32px;
+
+        text-align: center;
+      
+        margin-bottom: 40px;
+      }
+
+      .monts2{
+        width: 300px; ;
+        height: 46px ;
+        font-size: 20px;
+      }
+
+      .dataColectField{
+        width: 300px; ;
+        height: 46px ;
+
+      }
+
+        footer{
+
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            position: absolute;
+        }
+
+        footer a{
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+}
